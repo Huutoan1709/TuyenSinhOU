@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        property = "og:image"
+        content="https://thituyensinh.ican.vn/wp-content/uploads/2021/02/truong-dai-hoc-mo-tphcm-tuyen-dung-giang-vien-trinh-do-tien-si-2019-docx-1572607376073.jpeg"
+    >
+    <title>Khoa - Ngành</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/Style/base.css">
+    <link rel="stylesheet" href="./assets/Style/main.css">
+    <link rel="stylesheet" href="./assets/Style/responsive.css">
+    <link rel="shortcut icon" href="./assets/Images/logo_mau.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <img src="./assets/Images/logo.png" alt="">
+        </div>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="header__menu">
+            
+            <ul class="nav__list">
+                <li class="nav__item"><a href="./index.html" class="nav__item-link ">Trang chủ</a></li>
+                <li class="nav__item"><a href="./major-infor.html" class="nav__item-link underline">Khoa Ngành</a></li>
+                <li class="nav__item"><a href="./Thongtinxettuyen.html" class="nav__item-link">Thông tin tuyển sinh</a></li>
+                <li class="nav__item"><a href="./more-infor.html" class="nav__item-link">Thông tin tham khảo</a></li>
+            </ul>
+        </div>
+        <div class="header__search">
+            <div class="search">
+                <input type="text" class="search__input" placeholder="Tìm kiếm ..." >
+                <div class="search__icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <ul class="suggestions">
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="infor">
+                <nav>
+                    <ul class="nav-tool">
+                        <li class="nav-tool-item current" onclick="changeProgram(1)">Chương trình đại trà</li>
+                        <li class="nav-tool-item" onclick="changeProgram(2)">Chương trình Chất lượng cao</li>
+                        <li class="nav-tool-item" onclick="changeProgram(3)">Chương trình liên kết</li>
+                    </ul>
+                </nav>
+                <div class="faculty">
+                    <h2 class="title-1">Thông tin Khoa - Ngành</h2>
+                    <div class="faculty-wrap">
+                        <ul class="faculty-list">
+                            <div class="program-intro">
+                                <h3 class="title-2 program-title">Giới thiệu Chương trình đại trà</h3>
+                                <p class="program-desc">
+                                    Chương trình đại trà là chương trình đào tạo đại học chính quy của Trường Đại học Mở TP.HCM có mức học phí tuân theo quy định của Chính phủ với các Khoa, Ngành: 
+                                </p>
+                            </div>
+                            <li class="faculty-item"><a href="#">
+                                <div class="faculty-thumnail">
+                                    <img src="./assets/Images/K.CTXH.jpg" alt="">
+                                </div>
+                                <div class="faculty-detail">
+                                    <h3 class="title-2 faculty-name">Khoa Xã hội học - Công tác XH - ĐNA</h3>
+                                    <ul class="major-list">
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Xã hội học</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Công tác xã hội </a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Đông Nam Á học</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                            <li class="faculty-item"><a href="#">
+                                <div class="faculty-thumnail">
+                                    <img src="./assets/Images/K.CNTT.jpg" alt="">
+                                </div>
+                                <div class="faculty-detail">
+                                    <h3 class="title-2 faculty-name">Khoa Công nghệ thông tin</h3>
+                                    <ul class="major-list">
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Công nghệ thông tin</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Hệ thống thông tin</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Khoa học máy tính</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                            <li class="faculty-item"><a href="#">
+                                <div class="faculty-thumnail">
+                                    <img src="./assets/Images/K.TCNH.jpg" alt="">
+                                </div>
+                                <div class="faculty-detail">
+                                    <h3 class="title-2 faculty-name">Khoa Tài chính ngân hàng</h3>
+                                    <ul class="major-list">
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Tài chính ngân hàng</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                            <li class="faculty-item"><a href="#">
+                                <div class="faculty-thumnail">
+                                    <img src="./assets/Images/K.KTKT.jpg" alt="">
+                                </div>
+                                <div class="faculty-detail">
+                                    <h3 class="title-2 faculty-name">Khoa Kế toán - Kiểm toán</h3>
+                                    <ul class="major-list">
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Kế toán</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Kiểm toán</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                            <li class="faculty-item"><a href="#">
+                                <div class="faculty-thumnail">
+                                    <img src="./assets/Images/K.QTKD.jpg" alt="">
+                                </div>
+                                <div class="faculty-detail">
+                                    <h3 class="title-2 faculty-name">Khoa Quản trị kinh doanh</h3>
+                                    <ul class="major-list">
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Quản trị kinh doanh</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Marketing</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Kinh doanh quốc tế</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Quản trị nhân lực</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Du lịch</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Logistic và Quản lí chuỗi cung ứng</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                            <li class="faculty-item"><a href="#">
+                                <div class="faculty-thumnail">
+                                    <img src="./assets/Images/K.CNSH.jpg" alt="">
+                                </div>
+                                <div class="faculty-detail">
+                                    <h3 class="title-2 faculty-name">Công nghệ sinh học</h3>
+                                    <ul class="major-list">
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Công nghệ sinh học</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Công nghệ thực phẩm</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                            <li class="faculty-item"><a href="#">
+                                <div class="faculty-thumnail">
+                                    <img src="./assets/Images/K.XD.jpg" alt="">
+                                </div>
+                                <div class="faculty-detail">
+                                    <h3 class="title-2 faculty-name">Khoa Xây dựng</h3>
+                                    <ul class="major-list">
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Quản lý xây dựng</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Công nghệ kỹ thuật CTXD</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                            <li class="faculty-item"><a href="#">
+                                <div class="faculty-thumnail">
+                                    <img src="./assets/Images/K.L.jpg" alt="">
+                                </div>
+                                <div class="faculty-detail">
+                                    <h3 class="title-2 faculty-name">Khoa Luật</h3>
+                                    <ul class="major-list">
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Luật</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Luật kinh tế</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                            <li class="faculty-item"><a href="#">
+                                <div class="faculty-thumnail">
+                                    <img src="./assets/Images/K.KTQLC.jpg" alt="">
+                                </div>
+                                <div class="faculty-detail">
+                                    <h3 class="title-2 faculty-name">Khoa Kinh tế và quản lí công</h3>
+                                    <ul class="major-list">
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Kinh tế</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Quản lí công</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                            <li class="faculty-item"><a href="#">
+                                <div class="faculty-thumnail">
+                                    <img src="./assets/Images/K.NN.jpg" alt="">
+                                </div>
+                                <div class="faculty-detail">
+                                    <h3 class="title-2 faculty-name">Khoa Ngoại ngữ</h3>
+                                    <ul class="major-list">
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Ngôn ngữ Anh</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Ngôn ngữ Trung</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Ngôn ngữ Nhật</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Ngôn ngữ Hàn</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                        </ul>
+                        <ul class="faculty-list">
+                            <div class="program-intro">
+                                <h3 class="title-2">Giới thiệu Chương trình Chất lượng cao</h3>
+                                <p class="program-desc">
+                                    <p>
+                                        <div class="space"></div>Khoa Đào tạo đặc biệt (ĐTĐB) tiền thân là “Chương trình Đào tạo đặc biệt” được thành lập vào năm 2006, đào tạo chất lượng cao, nhằm cung cấp dịch vụ đào tạo đại học chất lượng, phương pháp đào tạo tiên tiến, chương trình đào tạo phù hợp với nhu cầu của xã hội và hội nhập với chương trình đào tạo của các trường đại học quốc tế.
+                                    </p>
+                                    <p>
+                                        <div class="space"></div>Ngày 09 tháng 03 năm 2016, Bộ Giáo dục và Đào tạo xác nhận đề án đào tạo chất lượng cao trình độ đại học các ngành Quản trị kinh doanh, Tài chính- Ngân hàng, Kế toán, Luật kinh tế, Ngôn ngữ Anh của trường Đại học Mở Tp. Hồ Chí Minh đã đảm bảo đủ các tiêu chí và điều kiện quy định về đào tạo chất lượng cao trình độ đại học.. Sau hơn 10 năm triển khai và hoạt động, Khoa ĐTĐB đã gặt hái nhiều thành công và cung cấp nguồn nhân lực chất lượng cao cho các doanh nghiệp và các tổ chức tài chính.
+                                    </p>
+                                    <p>
+                                        <div class="space"></div>Thành công đó đến từ những cải cách và đầu tư rất lớn của Khoa nhằm nâng cao chất lượng đào tạo đại học. Đội ngũ giảng viên của Khoa là tiến sĩ, thạc sĩ được đào tạo từ các nước phát triển, có trình độ chuyên môn cao và nhiều kinh nghiệm giảng dạy. Các học phần được thiết kế khoa học và có tính thực tiễn cao tạo điều kiện để sinh viên dễ dàng thích nghi với môi trường làm việc năng động hiện nay. Sinh viên được đưa đi tham quan, kiến tập, thực tập. Khoa mời giám đốc doanh nghiệp, chuyên viên lành nghề vào báo cáo chuyên đề các vấn đề hiện nay trong thực tiễn. Điều kiện học tập với trang thiết bị hiện đại, nhiều hoạt động giao lưu với doanh nghiệp, các chuyên đề kỹ năng, hội thảo khoa học cùng nhiều hoạt động của các câu lạc bộ, đội, nhóm…đã tạo rất nhiều cơ hội để các bạn sinh viên thực hành, phát triển các kỹ năng mềm và kiến thức.
+                                    </p>
+                                    <p>
+                                        <div class="space"></div>Khoa ĐTĐB tin tưởng, từ những thành công đã đạt được cùng với những nỗ lực để thay đổi và phát triển không ngừng sẽ đem đến cho các bạn sinh viên những cơ hội tốt để khởi nghiệp cho tương lai. Thành quả đó đã kết trái tốt đẹp: gần 90% sinh viên có việc làm trong vòng 3 tháng sau khi ra trường.
+                                    </p>
+                                </p>
+                            </div>
+
+                            
+                            <li class="faculty-item"><a href="#">
+                                <div class="faculty-thumnail">
+                                    <img src="./assets/Images/K.DTDB.jpg" alt="">
+                                </div>
+                                <div class="faculty-detail">
+                                    <h3 class="title-2 faculty-name">Khoa Đào tạo đặc biệt</h3>
+                                    <ul class="major-list">
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Ngôn ngữ Anh</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Ngôn ngữ Trung Quốc</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Ngôn ngữ Nhật</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Kinh tế</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Quản trị kinh doanh</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Tài chính ngân hàng</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Kế toán</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Luật kinh tế</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Công nghệ sinh học</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Khoa học máy tính</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Công nghệ kỹ thuật CTXD</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                            
+                        </ul>
+                        <ul class="faculty-list">
+                            <div class="program-intro">
+                                <h3 class="title-2">Giới thiệu Chương trình liên kết</h3>
+                                <p class="program-desc">
+                                    Với mục đích tạo cơ hội cho sinh viên tiếp cận chương trình đào tạo đại học có chất lượng, lấy bằng cấp nước ngoài & trở thành công dân toàn cầu, chúng tôi xin giới thiệu Thông tin tuyển sinh Chương trình Liên kết Quốc tế giữa Trường Đại học Mở TP. HCM & Đại học Flinders, Úc và Đại học Bond, Úc. Chương trình liên kết quốc tế của Trường Đại học Mở Thành phố Hồ Chí Minh đã triển khai từ năm 2018 và được sinh viên hài lòng về chất lượng giảng viên, phương pháp đào tạo & dịch vụ chăm sóc sinh viên.  
+                                </p>
+                            </div>
+
+                            <li class="faculty-item"><a href="#">
+                                <div class="faculty-thumnail">
+                                    <img src="./assets/Images/flinders.png" alt="">
+                                </div>
+                                <div class="faculty-detail">
+                                    <h3 class="title-2 faculty-name">Chương trình liên kết quốc tế Flinders</h3>
+                                    <ul class="major-list">
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Chuyên ngành Kinh doanh quốc tế</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Chuyên ngành Quản trị và đổi mới</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Chuyên ngành Quản trị nhân lực</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Chuyên ngành Marketing</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Chuyên ngành Quản trị</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Chuyên ngành Tài chính</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Chuyên ngành Kế toán</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Chuyên ngành Kinh tế kinh doanh</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Chuyên ngành Ngôn ngữ Anh</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                            <li class="faculty-item"><a href="#">
+                                <div class="faculty-thumnail">
+                                    <img src="./assets/Images/rouen.png" alt="">
+                                </div>
+                                <div class="faculty-detail">
+                                    <h3 class="title-2 faculty-name">Chương trình liên kết quốc tế Rouen</h3>
+                                    <ul class="major-list">
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Ngành Thương mại quốc tế</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                            <li class="faculty-item"><a href="#">
+                                <div class="faculty-thumnail">
+                                    <img src="./assets/Images/bond.jpg" alt="">
+                                </div>
+                                <div class="faculty-detail">
+                                    <h3 class="title-2 faculty-name">Chương trình liên kết quốc tế Bond, Úc</h3>
+                                    <ul class="major-list">
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Chuyên ngành Quản trị kinh doanh</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Chuyên ngành Quản trị du lịch</a></li>
+                                        <li class="major-item"><a href="#"><i class="fa-solid fa-caret-right"></i> Chuyên ngành Dữ liệu lớn</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="swipe-left-btn swipe-btn"><i class="fa-solid fa-angles-left"></i></button>
+            <div class="side-infor">
+                <div class="heading-on-mobile">
+                    <h3 class="title-1">KHÁM PHÁ OU</h3>
+                </div>
+
+                <div class="news side-section">
+                    <h3 class="news__title title-1">TIN TỨC</h3>
+                    <ul class="news__list">
+                        <li class="news__item">
+                            <a href="#">
+                                <h3 class="news__item-heading">Đề án tuyển sinh đại học năm 2022</h3>
+                                <div class="news__item-time">
+                                    <i class="fa-regular fa-clock"></i> 12/07/2022
+                                </div>
+                                <div class="news__item-tag"><i class="fa-solid fa-tag"></i> Tuyển sinh</div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="#">
+                                <h3 class="news__item-heading">Thông báo tuyển sinh chương trình liên kết Đại học Rouen Normandie, Pháp - Khóa 5, Năm 2022</h3>
+                                <div class="news__item-time">
+                                    <i class="fa-regular fa-clock"></i> 04/03/2022
+                                </div>
+                                <div class="news__item-tag"><i class="fa-solid fa-tag"></i> Tuyển sinh</div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="#">
+                                <h3 class="news__item-heading">Thông báo tuyển sinh chương trình liên kết đào tạo với Đại học Bond - Khóa 2</h3>
+                                <div class="news__item-time">
+                                    <i class="fa-regular fa-clock"></i> 02/03/2022
+                                </div>
+                                <div class="news__item-tag"><i class="fa-solid fa-tag"></i> Tuyển sinh</div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="#">
+                                <h3 class="news__item-heading">Thông báo tuyển sinh chương trình liên kết đào tạo với Đại học Flinders - Khóa 5</h3>
+                                <div class="news__item-time">
+                                    <i class="fa-regular fa-clock"></i> 02/03/2022
+                                </div>
+                                <div class="news__item-tag"><i class="fa-solid fa-tag"></i> Tuyển sinh</div>
+                            </a>
+                        </li>
+                        
+                        <li class="news__item">
+                            <a href="#">
+                                <h3 class="news__item-heading">Thông báo Mức học phí chương trình Chất lượng cao 2019-2020</h3>
+                                <div class="news__item-time">
+                                    <i class="fa-regular fa-clock"></i> 19/06/2019
+                                </div>
+                                <div class="news__item-tag"><i class="fa-solid fa-tag"></i> Tuyển sinh</div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="video side-section">
+                    <h3 class="video__title title-1">VIDEOS</h3>
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/Us1okcXiHpA" title="Giới thiệu Trường ĐH Mở TP. Hồ Chí Minh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="register-form side-section">
+                    <h3 class="title-1 register-form__heading">CÂU HỎI TUYỂN SINH</h3>
+                    <div class="register-form__input  form">
+                        <h1 class="title-2">Đăng kí nhận thông tin: </h1>
+                        <div class="register-form__input-item form-field">
+                            <input type="text" id="name" class="form-input" placeholder=" ">
+                            <label class="form-label" for="name">Họ tên</label>
+                        </div>
+                        <div class="register-form__input-item form-field">
+                            <input type="email" id="email" class="form-input" placeholder=" ">
+                            <label class="form-label" for="email">Email</label>
+                        </div>
+                        <div class="register-form__input-item form-field">
+                            <input type="number" id="phone" class="form-input" placeholder=" ">
+                            <label class="form-label" for="phone">Điện thoại</label>
+                        </div>
+
+                        <div class="form-field">
+                            <select id="register-seclect" class="form-input">
+                                <option value="CQ-DT">Đại học Chính quy (Hệ đại trà) </option>
+                                <option value="CQ-CLC">Đại học Chính quy (Chất lượng cao)</option>
+                                <option value="B2-LT">Bằng 2 - Liên thông</option>
+                            </select>
+                            <label for="register-seclect" class="form-label">Hệ đào tạo</label>
+                        </div>
+
+                        <div class="form-field">
+                            <textarea name="question" id="register-question" cols="30" rows="6" placeholder=" " class="form-input" ></textarea>
+                            <label for="register-question" class="form-label">Message</label>
+                        </div>
+                        <button class="primary submit">Gửi</button>
+                    </div>
+                    <div class="form-message-list">
+                        <div class="form-message">
+                            <div class="message-icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <!-- <i class="fa-solid fa-circle-exclamation"></i> -->
+                            </div>
+                            <div class="message-text">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fan-page side-section">
+                    <h3 class="video__title title-1">GROUPS FB</h3>
+                    <a href="https://www.facebook.com/groups/oumembers"><img src="./assets/Images/fanpage.jpg" alt="" class="fanpage-img"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="modal" id="modal">
+            <div class="modal-container">
+                <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+                <div class="major-modal">
+                    <div class="video">
+                        <iframe width="400" height="220" src="https://www.youtube.com/embed/idRUii-Jyug" title="Giới thiệu ngành Công Nghệ Thông Tin - Trường Đại học Mở Tp.HCM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="title">Ngành Công nghệ thông tin</h3>
+                    <p class="content">
+                        <div class="code">Mã ngành: <span>7480201</span></div>
+                        <h3>Nội dung đào tạo:</h3>
+                        <p>
+                            Ngành Công nghệ thông tin đào tạo các cử nhân nắm vững các kiến thức chuyên môn; có khả năng vận hành, quản lý, phát triển các ứng dụng CNTT; đáp ứng nhu cầu nhân lực CNTT trong các lĩnh vực chuyên môn khác nhau.
+                        </p>
+                        <h3>Liên hệ: </h3>
+                        <ul>
+                            <li><span>ĐỊA ĐIỂM HỌC TẬP:</span> 371 Nguyễn Kiệm, phường 3, Quận Gò Vấp, Tp.HCM.</li>
+                            <li><span>VĂN PHÒNG KHOA CÔNG NGHỆ THÔNG TIN</span></li>
+                            <li>Phòng 604, số 35 - 37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1, Tp.HCM</li>
+                            <li><span>Điện thoại:</span> (84-028) 38386603</li>
+                            <li><span>Website:</span> it.ou.edu.vn</li>
+                            <li><span>Email:</span> fcs@ou.edu.vn; doanhoicntt@ou.edu.vn</li>
+                            <li><span>Email:</span><a href=" https://www.facebook.com/tinhocmo"> https://www.facebook.com/tinhocmo</a></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="contact-list">
+                <div class="footer__logo">
+                    <img src="./assets/Images/logo-ngang.png" alt="OU">
+                </div>
+                <ul class="contacts">
+                    <li class="contact footer__item"><a href="#">
+                        <i class="fa-solid fa-location-dot"></i> 35-37 Hồ Hảo Hớn, P.Cô Giang, Q1, Tp.HCM
+                    </a></li>
+                    <li class="contact footer__item"><a href="#">
+                        <i class="fa-solid fa-phone"></i> 028.39207627 (08.39300072) hoặc Hotline: 1800585884
+                    </a></li>
+                    <li class="contact footer__item"><a href="#">
+                        <i class="fa-solid fa-envelope"></i> tuyensinh@ou.edu.vn
+                    </a></li>
+                </ul>
+
+                
+            </div>
+            <div class="facility-list">
+                <h3 class="title-2 footer__title">Cơ sở trực thuộc</h3>
+                <ul class="facilities">
+                    <li class="facility footer__item"><a href="#">CS 1: 97 Võ Văn Tần P6 Q3 Tp.HCM</a> </li>
+                    <li class="facility footer__item"><a href="#">CS 2: 35-37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1, Tp. Hồ Chí Minh.</a> </li>
+                    <li class="facility footer__item"><a href="#">CS 3: 371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, Tp. Hồ Chí Minh.</a> </li>
+                    <li class="facility footer__item"><a href="#">CS 4: 02 Mai Thị Lựu, Phường Đa Kao, Quận 1, Tp. Hồ Chí Minh.</a> </li>
+                    <li class="facility footer__item"><a href="#">CS 5: 68 Lê Thị Trung, Tp.Thủ Dầu Một, Tỉnh Bình Dương.</a> </li>
+                    <li class="facility footer__item"><a href="#">CS 6: Phường Long Bình Tân, Tp. Biên Hòa, Tỉnh Đồng Nai.</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>Ho Chi Minh City Open University © 2022.All Right Reserved.</p>
+                <ul class="socials">
+                    <li class="social"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="social"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li class="social"><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+        <button class="chat-btn"><i class="fa-brands fa-facebook-messenger"></i></button>
+        <button class="to-top"><a href="#"><i class="fa-solid fa-circle-up"></i></a></button>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/JS/p2.js"></script>
+</body>
+</html>
